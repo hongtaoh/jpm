@@ -1,0 +1,30 @@
+Executable = run_meta.sh
+Arguments = $(fname)
+
+Initialdir = /home/hhao9/mpebm
+
+# Transfer necessary files to the compute node
+transfer_input_files = run_meta.py, run_meta.sh, all_combinations.txt, config.yaml, true_order_and_stages_PL.json, true_order_and_stages_BT.json, true_order_and_stages_Pairwise.json, true_order_and_stages_Random.json, true_order_and_stages_Mallows_Tau_T10.json, true_order_and_stages_Mallows_Tau_T1.json
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_output_files = logs_meta, metadata
+
+Log = logs_meta/eval_$(fname).log
+Error = logs_meta/eval_$(fname).err
+Output = logs_meta/eval_$(fname).out
+
+request_cpus = 2
+request_memory = 8GB
+request_disk = 8GB
+
++TransferAttempts = 5
+
+priority = 560
+
+# Add these to ensure home directory exists
++WantHome = true
++WantRemoteIO = true
+
+requirements = (HasChtcStaging == True)
+
+queue fname from all_combinations.txt

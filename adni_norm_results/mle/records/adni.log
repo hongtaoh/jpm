@@ -1,0 +1,13 @@
+2025-11-11 18:19:09,550 - INFO - Running mle for file: adni
+2025-11-11 18:19:09,552 - INFO - Number of biomarkers: 18
+2025-11-11 18:19:33,385 - INFO - Iteration 2000/20000, Acceptance Ratio: 4.55%, Log Likelihood: -5194.9359, 
+2025-11-11 18:19:42,750 - INFO - Iteration 4000/20000, Acceptance Ratio: 3.75%, Log Likelihood: -5192.5085, 
+2025-11-11 18:19:52,107 - INFO - Iteration 6000/20000, Acceptance Ratio: 2.97%, Log Likelihood: -5194.5764, 
+2025-11-11 18:20:01,418 - INFO - Iteration 8000/20000, Acceptance Ratio: 2.23%, Log Likelihood: -5194.5764, 
+2025-11-11 18:20:10,752 - INFO - Iteration 10000/20000, Acceptance Ratio: 1.86%, Log Likelihood: -5189.4647, 
+2025-11-11 18:20:20,117 - INFO - Iteration 12000/20000, Acceptance Ratio: 1.86%, Log Likelihood: -5192.1649, 
+2025-11-11 18:20:29,458 - INFO - Iteration 14000/20000, Acceptance Ratio: 1.66%, Log Likelihood: -5190.1584, 
+2025-11-11 18:20:38,821 - INFO - Iteration 16000/20000, Acceptance Ratio: 1.45%, Log Likelihood: -5190.1584, 
+2025-11-11 18:20:48,174 - INFO - Iteration 18000/20000, Acceptance Ratio: 1.29%, Log Likelihood: -5190.1584, 
+2025-11-11 18:20:57,521 - INFO - Iteration 20000/20000, Acceptance Ratio: 1.16%, Log Likelihood: -5190.1584, 
+2025-11-11 18:20:59,713 - INFO - Results saved to /home/hhao9/mpebm/adni_norm_results/mle/results/adni_results.json

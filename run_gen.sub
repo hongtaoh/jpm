@@ -1,0 +1,30 @@
+Executable = run_gen.sh
+Arguments = $(mp_method)
+
+Initialdir = /home/hhao9/mpebm
+
+# Transfer necessary files to the compute node
+transfer_input_files = run_gen.py, run_gen.sh, params.json, config.yaml, all_mp_gen_methods.txt 
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_output_files = logs_gen, data, json_files
+
+Log = logs_gen/eval_$(mp_method).log
+Error = logs_gen/eval_$(mp_method).err
+Output = logs_gen/eval_$(mp_method).out
+
+request_cpus   = 4
+request_memory = 8GB
+request_disk   = 20GB
+
++TransferAttempts = 5
+
+priority = 500
+
+requirements = (HasChtcStaging == True)
+
+# Add these to ensure home directory exists
++WantHome = true
++WantRemoteIO = true
+
+queue mp_method from all_mp_gen_methods.txt

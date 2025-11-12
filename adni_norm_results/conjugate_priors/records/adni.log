@@ -1,0 +1,13 @@
+2025-11-11 18:20:59,717 - INFO - Running conjugate priors for file: adni
+2025-11-11 18:20:59,720 - INFO - Number of biomarkers: 18
+2025-11-11 18:21:07,207 - INFO - Iteration 2000/20000, Acceptance Ratio: 5.65%, Log Likelihood: -5486.6906, 
+2025-11-11 18:21:14,651 - INFO - Iteration 4000/20000, Acceptance Ratio: 3.30%, Log Likelihood: -5496.0445, 
+2025-11-11 18:21:22,179 - INFO - Iteration 6000/20000, Acceptance Ratio: 3.38%, Log Likelihood: -5487.3881, 
+2025-11-11 18:21:29,721 - INFO - Iteration 8000/20000, Acceptance Ratio: 3.24%, Log Likelihood: -5488.1893, 
+2025-11-11 18:21:37,157 - INFO - Iteration 10000/20000, Acceptance Ratio: 2.69%, Log Likelihood: -5486.3572, 
+2025-11-11 18:21:44,615 - INFO - Iteration 12000/20000, Acceptance Ratio: 2.24%, Log Likelihood: -5486.3572, 
+2025-11-11 18:21:52,067 - INFO - Iteration 14000/20000, Acceptance Ratio: 2.10%, Log Likelihood: -5486.1922, 
+2025-11-11 18:21:59,498 - INFO - Iteration 16000/20000, Acceptance Ratio: 2.03%, Log Likelihood: -5482.4235, 
+2025-11-11 18:22:06,950 - INFO - Iteration 18000/20000, Acceptance Ratio: 2.04%, Log Likelihood: -5479.9076, 
+2025-11-11 18:22:14,536 - INFO - Iteration 20000/20000, Acceptance Ratio: 2.00%, Log Likelihood: -5480.5812, 
+2025-11-11 18:22:16,250 - INFO - Results saved to /home/hhao9/mpebm/adni_norm_results/conjugate_priors/results/adni_results.json
