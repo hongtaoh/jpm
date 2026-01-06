@@ -7,8 +7,26 @@ Note that the data generation and experiments are conducted on a high-performanc
 Many plots of our paper are available on Observable: [@hongtaoh/jpm](https://observablehq.com/@hongtaoh/jpm).
 
 
-On page 4, in the subsection of 3.3 (Variant 2: Generalized Bradley-Terry (BT)), the likelihood of a partial ranking ($\sigma^{(k)}$) is wrong. In fact, $C_{i,j}$ defined in the paper is never used in the math nor in the code. The correct definition of $C_{i,j}$ should be: for any pair $i, j \in T^{(k)}$, if $i$ preceeds $j$, then $C_{(i,j)} = 1$; otherwise, $C_{(i,j)} = 0$. That is to say, $C_{(i,j)}$ is defined and calculate locally. 
+> [!WARNING]
+> **Correction Regarding Section 3.3**
+>
+> On page 4, in **Section 3.3 (Variant 2: Generalized Bradley-Terry)**, the likelihood formulation for a partial ranking $\sigma^{(k)}$ is incorrect.
+>
+> The term $C_{i,j}$, defined in the text as a global count across all rankings, is inconsistent with the math and the code for a single observation. The **correct definition** should be local:
+>
+> For any pair $i, j \in T^{(k)}$:
+> * $C_{i,j} = 1$ if $i$ precedes $j$
+> * $C_{i,j} = 0$ otherwise
 
+<div style="background-color: #fff4e5; border-left: 6px solid #ff9800; padding: 15px; margin: 10px 0;">
+    <strong style="color: #e65100; font-size: 1.2em;">⚠️ Correction: Page 4</strong>
+    <p>
+        In <strong>Section 3.3 (Variant 2: Generalized Bradley-Terry)</strong>, the likelihood formulation for a partial ranking $\sigma^{(k)}$ is incorrect.
+    </p>
+    <p>
+        The term $C_{i,j}$ is defined in the text as a global count, which conflicts with the code. The correct definition must be <strong>local</strong>: for any pair $i, j \in T^{(k)}$, $C_{i,j} = 1$ if $i$ precedes $j$, and $0$ otherwise.
+    </p>
+</div>
 
 ## Notice
 
