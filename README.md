@@ -14,19 +14,10 @@ Many plots of our paper are available on Observable: [@hongtaoh/jpm](https://obs
 >
 > The term $C_{i,j}$, defined in the text as a global count across all rankings, is inconsistent with the math and the code for a single observation. The **correct definition** should be local:
 >
-> For any pair $i, j \in T^{(k)}$:
+> For any pair $i, j$ in $T^{(k)}$:
 > * $C_{i,j} = 1$ if $i$ precedes $j$
 > * $C_{i,j} = 0$ otherwise
 
-<div style="background-color: #fff4e5; border-left: 6px solid #ff9800; padding: 15px; margin: 10px 0;">
-    <strong style="color: #e65100; font-size: 1.2em;">⚠️ Correction: Page 4</strong>
-    <p>
-        In <strong>Section 3.3 (Variant 2: Generalized Bradley-Terry)</strong>, the likelihood formulation for a partial ranking $\sigma^{(k)}$ is incorrect.
-    </p>
-    <p>
-        The term $C_{i,j}$ is defined in the text as a global count, which conflicts with the code. The correct definition must be <strong>local</strong>: for any pair $i, j \in T^{(k)}$, $C_{i,j} = 1$ if $i$ precedes $j$, and $0$ otherwise.
-    </p>
-</div>
 
 ## Notice
 
