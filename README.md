@@ -6,10 +6,20 @@ Note that the data generation and experiments are conducted on a high-performanc
 
 Many plots of our paper are available on Observable: [@hongtaoh/jpm](https://observablehq.com/@hongtaoh/jpm).
 
-## Correction
+> [!WARNING]
+> **Correction Regarding Section 3.3**
+>
+> On page 4, in **Section 3.3 (Variant 2: Generalized Bradley-Terry)**, the likelihood formulation for a partial ranking $\sigma^{(k)}$ is incorrect.
+>
+> The term $C_{i,j}$, defined in the text as a global count across all rankings, is inconsistent with the math and the code for a single observation. The **correct definition** should be local:
+>
+> For any pair $i, j \in T^{(k)}$:
+> * $C_{i,j} = 1$ if $i$ precedes $j$
+> * $C_{i,j} = 0$ otherwise
 
-On page 4, in the subsection of 3.3 (Variant 2: Generalized Bradley-Terry (BT)), the likelihood of a partial ranking ($\sigma^{(k)}$) is wrong. 
+<!-- ## Correction!
 
+On page 4, in Section 3.3 (Variant 2: Generalized Bradley-Terry), the likelihood formulation for a partial ranking $\sigma^{(k)}$ is incorrect. The term $C_{i,j}$, defined in the text as a global count across all rankings, is inconsistent with the math and the code for a single observation. The correct definition should be local: for any pair $i, j \in T^{(k)}$, $C_{i,j} = 1$ if $i$ precedes $j$, and $0$ otherwise. -->
 
 ## Notice
 
