@@ -18,6 +18,7 @@ Many plots of our paper are available on Observable: [@hongtaoh/jpm](https://obs
 > * $C_{i,j} = 1$ if $i$ precedes $j$
 > * $C_{i,j} = 0$ otherwise
 
+This error didn't affect the paper's findings as the implementation is according to this correct definition of $C_{i,j}$. 
 
 ## Notice
 
