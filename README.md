@@ -6,6 +6,11 @@ Note that the data generation and experiments are conducted on a high-performanc
 
 Many plots of our paper are available on Observable: [@hongtaoh/jpm](https://observablehq.com/@hongtaoh/jpm).
 
+## Correction
+
+On page 4, in the subsection of 3.3 (Variant 2: Generalized Bradley-Terry (BT)), the likelihood of a partial ranking ($\sigma^{(k)}$) is wrong. 
+
+
 ## Notice
 
 In this study (the original version submitted for review), we used slightly earlier version of [`pysaebm`](https://github.com/jpcca/pysaebm) to get the theta/phi parameters of 18 biomarkers from ADNI, and then generated the synthetic data. We later updated `pysaebm` by using soft rather than hard assignment in the conjugate priors algorithm. But we didn't update the synthetic data with the new theta/phi obtained from running the newer version of `pysaebm`. 
